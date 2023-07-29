@@ -36,10 +36,10 @@ const Header = () => {
         <Link href={{pathname:'/'}}>Andes</Link>
       </NavItem>
       <NavItem>
-      <Link href={{pathname:'#example'}}>Documentation</Link>
+      <Link href="#example">Documentation</Link>
       </NavItem>
       <NavItem>
-      <Link href={{pathname:'#example'}}>Example</Link>
+      <Link href="#example">Example</Link>
       </NavItem>
       <NavItem>
       <Link href={{pathname:'/LogIn'}}>Log In</Link>
