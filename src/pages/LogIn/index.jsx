@@ -41,10 +41,9 @@ const LogIn = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <Link href={{pathname: '/SignUp' }}>
-              Don't have an account?
-             </Link>
-
+            <Link href={{ pathname: '/SignUp' }}>
+              Don&apos;t have an account?
+            </Link>
             <Button type="submit" variant="contained"
               style={{ color: 'powderblue', backgroundColor: 'gray' }} fullWidth>
               Login
