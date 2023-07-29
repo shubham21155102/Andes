@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Container, Paper, Typography, TextField, Button } from '@mui/material';
 import Header from '../header';
 import Footer from '../Footer';
+import Link from 'next/link';
 
 const SignUp = () => {
   const [username, setUsername] = useState('');
@@ -61,7 +62,9 @@ const SignUp = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <a href='/LogIn'>Already Have an account</a>
+          <Link href={{pathname: '/LogIn' }}>
+              Already have an account
+             </Link>
           <Button type="submit" variant="contained"  fullWidth
           style={{color:'powderblue',backgroundColor:'gray'}}>
             SignUp
