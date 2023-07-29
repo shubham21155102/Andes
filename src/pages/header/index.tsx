@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, styled } from '@mui/material';
+import Link from 'next/link';
 type Props = {};
 const NavBar = styled('nav')({
   display: 'flex',
@@ -32,16 +33,16 @@ const Header = () => {
   return (
     <NavBar>
       <NavItem>
-        <a href='/'>Andes</a>
+        <Link href={{pathname:'/'}}>Andes</Link>
       </NavItem>
       <NavItem>
-        <a href='#example'>Documentation</a>
+      <Link href={{pathname:'#example'}}>Documentation</Link>
       </NavItem>
       <NavItem>
-        <a href='#example'>Example</a>
+      <Link href={{pathname:'#example'}}>Example</Link>
       </NavItem>
       <NavItem>
-        <a href='/LogIn'>Log In</a>
+      <Link href={{pathname:'/LogIn'}}>Log In</Link>
       </NavItem>
      
 
