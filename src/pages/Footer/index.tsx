@@ -61,7 +61,7 @@ const InfoBox = styled('div')({
 
 const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer style={{backgroundColor:'black',fontFamily:'Apple',fontSize:'20px'}}>
       <FooterTop>
         <div className="container">
           <div className="row gy-4">

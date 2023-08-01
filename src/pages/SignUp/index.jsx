@@ -3,7 +3,11 @@ import { Container, Paper, Typography, TextField, Button } from '@mui/material';
 import Header from '../header';
 import Footer from '../Footer';
 import Link from 'next/link';
-
+import { Roboto_Flex } from 'next/font/google';
+const roboto=Roboto_Flex({
+      weight:'300',
+      subsets: ['latin']
+})
 const SignUp = () => {
   const [username, setUsername] = useState('');
   const [email,setEmail]=useState('');
@@ -22,8 +26,8 @@ const SignUp = () => {
     <>
     <Header/>
     <Container maxWidth="xs">
-      <Paper elevation={3} sx={{ padding: '2rem', marginTop: '2rem' }}>
-        <Typography variant="h5" align="center" gutterBottom>
+      <Paper elevation={3} sx={{ padding: '2rem', marginTop: '2rem' }} className={roboto.className}  style={{backgroundColor:'skyblue',borderRadius:'50px'}}>
+        <Typography variant="h5" align="center" gutterBottom className={roboto.className} style={   {color:'black',fontFamily:'Roboto',fontWeight:'bold',fontSize:'30px'}   }>
           SignUp
         </Typography>
         <form onSubmit={handleSubmit}>

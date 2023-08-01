@@ -19,7 +19,7 @@ const LandingPage = () => {
     <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center" minHeight="100vh">
       {/* Add Google Fonts */}
       {/* <GoogleFont href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&subset=latin&display=swap" rel="stylesheet" /> */}
-      <Typography variant='h6' alignItems="left">Andes extract</Typography>
+      <Typography variant='h6' alignItems="left" style={{color:'red'}}>Andes extract</Typography>
       <Box display="flex" alignItems="center" justifyContent="center" flexDirection="row"> {/* Change flexDirection to "row" */}
         <Typography variant="h2" gutterBottom className={roboto.className} style={{color:'white'}} >Extract 
         </Typography>
@@ -29,10 +29,10 @@ const LandingPage = () => {
           
       </Box>
 
-      <Typography variant="h5" align="center" gutterBottom>
+      <Typography variant="h5" align="center" gutterBottom style={{color:'white'}}>
         {texts}
       </Typography>
-      <SignUpButton variant="contained">Get Started</SignUpButton>
+      {/* <SignUpButton variant="contained">Get Started</SignUpButton> */}
     </Box>
   );
 }
